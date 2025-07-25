@@ -75,7 +75,67 @@ header{
 span{
     color: #E95A08;
 }
+p{
+    color: #00000080;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
 
+/* main section */
+main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* PLANTS SECTION */
+.plants{
+    text-align: center;
+}
+.plants h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.plants p{
+    margin: 0;
+    margin-bottom: 50px;
+}
+.card{
+    /* border: 2px solid; */
+}
+
+.card img{
+    width: 100%;
+}
+.card h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    margin: 30px 0 20px 0;
+}
+.card h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.card button{
+    width: 100%;
+    background-color:#E95A08;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 20px 50px;
+    border: 0;
+    
+}
+
+.plant-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
 
 
 /* responsive */
@@ -93,4 +153,23 @@ span{
     .banner{
         flex-direction: column-reverse;
     }
+
+  main{
+    max-width: 100%;
+  }
+
+    /* our plants section */
+    .plant-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .plants{
+        width: 100%;
+    }
+    .plants p{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 28px;
+    }
+
 }
