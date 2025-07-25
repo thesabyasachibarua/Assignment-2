@@ -90,6 +90,7 @@ main{
 /* PLANTS SECTION */
 .plants{
     text-align: center;
+    margin-bottom: 210px;
 }
 .plants h2{
     font-size: 3rem;
@@ -135,6 +136,30 @@ main{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+}
+
+/* plants lover section */
+
+.plants-lover{
+    display: flex;
+    gap: 60px;
+}
+.plants-lover img{
+    /* width: 50%; */
+}
+
+.lover-written h2{
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.lover-written ul li{
+    color: #00000080;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
 }
 
 
