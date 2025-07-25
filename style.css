@@ -377,6 +377,9 @@ footer{
     .plants-lover{
         flex-direction: column;
     }
+    #trust{
+        display: none;
+    }
 
     /* challenge */
 
