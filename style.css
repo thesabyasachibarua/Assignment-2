@@ -23,7 +23,6 @@
     "wdth" 100;
 }
 
-
 header{
     max-width: 80%;
     margin: 0 auto;
@@ -33,6 +32,7 @@ header{
 .navbar{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 150px;
 }
 .navbar ul{
     display: flex;
@@ -48,4 +48,49 @@ header{
 }
 #nav-H{
     font-weight:700;
+}
+
+/* banner style */
+
+.banner{
+     
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.hero-text h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.hero-text p{
+    color: #00000080;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* shared style */
+
+span{
+    color: #E95A08;
+}
+
+
+
+/* responsive */
+@media screen and (max-width:576px) {
+    
+    header{
+        max-width: 100%;
+    }
+    #nav-H{
+            display: none;}
+    .s{
+        display: none;
+    }
+    /* banner part */
+    .banner{
+        flex-direction: column-reverse;
+    }
 }
