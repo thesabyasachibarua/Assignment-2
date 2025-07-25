@@ -145,6 +145,7 @@ main{
     display: flex;
     gap: 60px;
     margin-bottom: 130px;
+    position: relative;
 }
 .plants-lover img{
     /* width: 50%; */
@@ -164,31 +165,63 @@ main{
     margin-bottom: 20px;
 }
 
+#trust{
+        position: absolute;
+        top: -105px;
+        /* right: 10px; */
+        left: 410px;
+        animation: spin 3s infinite;
+    }
+
+   
+           @keyframes spin {
+            from{
+                transform:rotate(0deg)
+            }
+            to{
+                transform:rotate(360deg)
+            }
+        }
+
+    #trust img{
+        /* size: 50%; */
+        /* padding: 50px; */
+        width: 220px;
+/* box-shadow: -4px 10px 4px 0 rgba(0, 0, 0, 0.25); */
+    }
+
+
 /* lastest deals section */
 .latest-deals{
     text-align: center;
+    margin-bottom: 120px;
 }
 
 .latest-deals h2{
     font-size: 3.1rem;
     font-weight: 700;
+    
+}
+.latest-deals p{
+    margin-bottom: 120px;
 }
 .collage{
-    display: flex;
-    gap: 28px;
-    justify-content: center;
-    align-items: center;
-    height: 420px;
+    display: grid;
+    gap: 25px;
+    grid-template-areas: 
+    "col1 col3 col3"
+    "col2 col3 col3";
 }
 
 .col1{
-    margin-bottom: 25px;
     background-image: url(./assets/deal-bloom.png);
      background-repeat: no-repeat;
      background-size: cover;
     border-radius: 10px;
     padding: 38px;
     color: white;
+    grid-area: col1;
+   
 }
 
 .col1 h4{
@@ -202,6 +235,7 @@ main{
     border-radius: 10px;
     padding: 38px;
     color: white;
+    grid-area: col2;
 }
 .col2 h4{
     text-decoration: underline;
@@ -214,11 +248,16 @@ main{
      background-repeat: no-repeat;
      background-size: cover;
      border-radius: 10px;
-     padding: 100px;
+     padding: 100px 0;
      color: white;
+     grid-area: col3;
     }
     .col3 h3{
+        font-size: 2.5rem;
+    }
+    .col3 h4{
         text-decoration: underline;
+        font-size: 1.75rem;
     }
 
 .latest-col{
@@ -338,6 +377,24 @@ footer{
     .plants-lover{
         flex-direction: column;
     }
+
+    /* challenge */
+
+    .collage{
+        grid-template-areas: 
+        "col1"
+        "col2"
+        "col3";}
+
+        .col3{
+            padding: 38px;
+        }
+        .col3 h3{
+            font-size: 1rem;
+        }
+        .col3 h4{
+            font-size: 1rem;
+        }
 
     /* footer section */
     .footer-last{
