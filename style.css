@@ -81,6 +81,12 @@ p{
     font-weight: 400;
 }
 
+.overlay{
+    border-image-source: linear-gradient(hsla(240, 60%, 1%, 0.441));
+    border-image-slice: fill 1;
+    /* border-radius: 10px; */
+}
+
 /* main section */
 main{
     max-width: 80%;
@@ -221,8 +227,7 @@ main{
     padding: 38px;
     color: white;
     grid-area: col1;
-   
-}
+    }
 
 .col1 h4{
     text-decoration: underline;
@@ -261,16 +266,13 @@ main{
     }
 
 .latest-col{
-    /* border: 2px solid; */
     width: 30%;
-    /* height: 100%; */
 
 }
 
 /* footer section */
 footer{
     margin-top: 120px;
-    /* max-width: 100%; */
 }
 .footer-bg{
     text-align: center;
@@ -278,7 +280,6 @@ footer{
     background-image: url(./assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size:cover;
-    /* max-width: 100%; */
 }
 
 .footer-bg h2{
@@ -393,7 +394,7 @@ footer{
             padding: 38px;
         }
         .col3 h3{
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
         .col3 h4{
             font-size: 1rem;
