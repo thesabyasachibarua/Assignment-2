@@ -136,6 +136,7 @@ main{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+    /* margin-bottom: 120px; */
 }
 
 /* plants lover section */
@@ -162,6 +163,77 @@ main{
     margin-bottom: 40px;
 }
 
+/* footer section */
+footer{
+    margin-top: 120px;
+    /* max-width: 100%; */
+}
+.footer-bg{
+    text-align: center;
+    border: 0.1px solid white;
+    background-image: url(./assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* max-width: 100%; */
+}
+
+.footer-bg h2{
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 199px;
+}
+
+.footer-bg input{
+    padding: 15px 20px;
+    width: 55%;
+    border: 0;
+    /* margin-left: 305px; */
+    margin-bottom: 193px;
+}
+
+.footer-bg button{
+    padding: 13.5px 40px;
+    /* width: 10%; */
+    transform: translateX(-4px) translateY(1px);
+    background-color: #E95A08;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0;
+}
+
+.footer-last{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4,1fr);
+    margin: 50px 100px;
+}
+.list-1 li{
+    list-style: none;
+    margin-bottom: 32px;
+    color: #00000080;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.list-2 li{
+    list-style: none;
+    margin-bottom: 32px;
+    color: #00000080;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.companies img{
+    margin-right: 24px;
+}
+
+.logo p{
+    color: #00000080;
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 /* responsive */
 @media screen and (max-width:576px) {
@@ -195,6 +267,34 @@ main{
         width: 80%;
         margin: 0 auto;
         margin-bottom: 28px;
+    }
+
+    /* plants lover section*/
+    .plants-lover{
+        flex-direction: column;
+    }
+
+    /* footer section */
+    .footer-last{
+        grid-template-columns: repeat(1,1fr);
+        margin: 50px 0;
+    }
+
+    .footer-last{
+        margin-left: 20px;
+    }
+
+    .footer-bg h2{
+        margin-top: 60px;
+        font-size: 1.25rem;
+    }
+
+    .footer-bg input{
+        margin-bottom: 80px;
+        width: 40%;
+    }
+    .footer-bg button{
+        /* width: 40%; */
     }
 
 }
